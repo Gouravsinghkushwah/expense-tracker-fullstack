@@ -51,7 +51,7 @@ The application uses two primary entities:
 - Java 17+
 - Maven
 - MySQL Database
-- IDE (Spring Tool Suite / IntelliJ / VS Code)
+- IDE (Spring Tool Suite)
 
 ---
 
@@ -60,15 +60,15 @@ The application uses two primary entities:
 1. **Clone the Repository**
 
    ```bash
-   git clone <your-repo-url>
-   cd expense-tracker-backend
-   API Endpoints
+   git clone <https://github.com/Gouravsinghkushwah/MicroServiceHub>
+   
 
+   API Endpoints
 Method	Endpoint	Description
-POST	/api/users/register    	Register new user
+POST	/api/users/register     	Register new user
 GET	/api/users/{email}	      Get user by email
 GET	/api/expenses           	Get all expenses
-POST	/api/expenses	          Add new expense
+POST	/api/expenses	            Add new expense
 GET	/api/expenses/{id}      	Get expense by ID
 PUT	/api/expenses/{id}      	Update expense by ID
-DELETE	/api/expenses/{id}  	Delete expense by ID
+DELETE	/api/expenses/{id}   	Delete expense by ID
