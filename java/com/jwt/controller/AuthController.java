@@ -23,7 +23,8 @@
   
   @RestController
   
-  @RequestMapping("/auth") public class AuthController {
+  @RequestMapping("/auth") 
+    public class AuthController {
   
   
   
