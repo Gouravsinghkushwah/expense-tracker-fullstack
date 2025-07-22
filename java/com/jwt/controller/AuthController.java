@@ -40,7 +40,8 @@
   
   
   @PostMapping("/login") public ResponseEntity<JwtResponse> login(@RequestBody
-  JwtRequest jwtRequest) { this.doAuthenticate(jwtRequest.getEmail(),
+  JwtRequest jwtRequest) { 
+    this.doAuthenticate(jwtRequest.getEmail(),
   jwtRequest.getPassword()); UserDetails userDetails =
   userdetailsService.loadUserByUsername(jwtRequest.getEmail()); String token =
   this.helper.generateToken(userDetails);
@@ -63,6 +64,7 @@
   }
   
   @ExceptionHandler(BadCredentialsException.class) public String
-  exceptionHandler() { return "CredentionInvalid"; 
+  exceptionHandler() { 
+    return "CredentionInvalid"; 
                      } }
  
